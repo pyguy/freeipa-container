@@ -113,4 +113,4 @@ solution provides features for further integration with Linux based clients \
 (SUDO, automount) and integration with Active Directory based infrastructures \
 (Trusts)."
 
-LABEL maintainer="FreeIPA Developers <freeipa-devel@lists.fedorahosted.org>"
+LABEL maintainer="Hamidreza Josheghani <hr.josheghani@gmail.com>"

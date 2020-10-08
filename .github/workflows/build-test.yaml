@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build image
-        run: docker build -t local/freeipa-server:${{ matrix.os }} -f Dockerfile.${{ matrix.os }} .
+        run: docker buildx build --platform linux/arm/v7 -t local/freeipa-server:${{ matrix.os }} -f Dockerfile.${{ matrix.os }} .
       - name: File issue if building image failed
         if: ${{ failure() && github.event_name == 'schedule' }}
         run: |
